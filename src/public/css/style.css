@@ -175,19 +175,6 @@ input{
     cursor: pointer;
 }
 
-/* ############### boton slider ############### */
-.Cont_Botton{
-    display: flex;
-}
-.b_left{
-    left: 100px;
-    cursor: pointer;
-}
-.b_right{
-    right: 100px;
-    cursor: pointer;
-}
-
 /* ############### requirement ############### */
 .requisito{
     display: flex;
@@ -625,6 +612,37 @@ footer{
     #LEY:checked + .Leyendas{
         display: none;
     }
+    /* ############### REQUISITOS ############### */
+
+    .requi{
+        width: 80%;
+    }
+    .req_h2{
+        font-size: 1.75rem;
+    }
+    .reqtit{
+        margin-top: 15px;
+    }
+    
+    .req_section{
+        display: block;
+        margin-left: 10%;
+    }
+    .req_01{
+        width: 80%;
+        margin-bottom: 25px;
+    }
+    .req_02{
+        width: 80%;
+        margin-left: 0%;
+        margin-bottom: 25px;
+    }
+    .req_li{
+        font-size: 1rem;
+        margin-bottom: 5px;
+        list-style:inside;
+    }
+
 
     /* ############### BOX Legends ############### */
     .tarje_legends{
