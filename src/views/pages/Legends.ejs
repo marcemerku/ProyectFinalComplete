@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include('../partials/head') %>
+</head>
+<body>
+    <header>
+        <%-include('../partials/header.ejs') %>
+    </header>
+    <nav>
+        <%-include('../partials/nav.ejs') %>
+    </nav>
+    <main>
+        <section>
+           
+            <img src="img/separador_leyendas.jpg" alt="" class="img_ini">
+            <div class="wrap">
+                <% info.forEach((prod)=>{ %>
+                        
+                        <label for="<%= prod.for%>" >
+                            <div class="tarjeta_legends">
+                                <img src="<%= prod.imagen%>" alt="" class="tarje_legends">
+                                <h4 class="legends_tit"><%= prod.name%></h4>
+                                <h5 class="legends_h5"><%= prod.specialty%></h5>
+                            </div>
+                        </label>
+                     
+                    <div class="info_legends">
+                        <input type="checkbox" name="<%= prod.for%>" id="<%= prod.for%>">
+                        <div class="box">
+                            <div class="box_info">
+                                <p class="text_medio"><%= prod.info_legends%></p>
+                                <div class="box_hab">
+                                    <div class="box2_hab">
+                                        <img src="<%= prod.img_hab01%>" alt="" class="img_hab">
+                                        <h4 class="text_ha4">Habilidad Táctica</h4>
+                                        <h5 class="text_ha5"><%= prod.text_info01%></h5>
+                                    </div>
+                                    <div class="box2_hab">
+                                        <img src="<%= prod.img_hab02%>" alt="" class="img_hab">
+                                        <h4 class="text_ha4">Habilidad Pasiva</h4>
+                                        <h5 class="text_ha5"><%= prod.text_info02%></h5>
+                                    </div>
+                                    <div class="box2_hab">
+                                        <img src="<%= prod.img_hab03%>" alt="" class="img_hab">
+                                        <h4 class="text_ha4">Habilidad Definitiva</h4>
+                                        <h5 class="text_ha5"><%= prod.text_info03%></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box_YT">
+                                <iframe  width="560" height="315" src="<%= prod.YT%>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="link_YT"></iframe>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                <%}); %>
+            </div>
+           
+        </section>
+
+    </main>
+    <footer>
+        <%-include('../partials/footer.ejs') %>
+    </footer>
+</html>

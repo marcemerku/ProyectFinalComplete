@@ -1,0 +1,791 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*
+    PC 990px 1200px
+    Tablet 768px
+    Celular 320px
+*/
+*{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* ############### header ############### */
+header{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(224, 28, 28);
+    justify-content:space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-self: center;
+}
+.header_account{
+    height: 70px;
+    display: flex;  
+    border-radius: 50%;
+    cursor: pointer;
+}
+.header_h1{
+    align-self: center; 
+    font-size: 2.5rem;
+}
+
+.menu_despl{
+    position: absolute;
+    transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+    background-color: rgba(177, 177, 177, 0.637);
+    right: 80px;
+    top: 10px;
+    height: 160px;
+    width: 200px;
+    border-radius: 5%;
+}
+
+.header_account:hover{
+    background-color: salmon;
+}
+.header_account:hover > .menu_despl{
+    opacity: 1;
+    visibility: visible;
+}
+.header_li{
+    font-size: 1.5rem; 
+    
+}
+.header_a{
+    display: block;
+    padding: 10px 10px 10px 10px;
+    color: black;
+}
+.header_a:hover{
+    background-color: rgba(112, 128, 144, 0.842);
+    color: white;
+}
+
+/* ############### nav ############### */
+
+nav{
+    
+    background-color: black;
+    display: flex;
+}
+.nav_menu{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.nav_ul{
+    display: flex;
+    width: 100%;
+    height: 90px;
+    
+
+}
+.nav_li{
+    font-size: 2.25rem;
+    
+}
+.nav_a{
+    display: block;
+    color: white;
+    padding: 22px 30px 22px 30px;
+}
+
+.nav_a:hover{
+    background-color: rgba(88, 88, 88, 0.842);
+}
+.btn_hamburger{
+    background-color: white;
+    border-radius: 50%;
+    display: none;
+    height: 60px;
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+.btn_img{
+    height: 40px;
+    width: 40px;
+    margin: auto;
+}
+input{
+    display: none; 
+}
+
+.img_ini{
+    width: 100%;
+}
+
+/* ############### main ############### */
+
+.acerca_text{
+    font-size: 1.75rem;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 50px;
+}
+
+.acerca_h2{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.btn_icons{
+    height: 60px;
+    width: 60px;
+    display: none;
+}
+
+/* ############### leyenda ############### */
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.tarjeta_legends{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+}
+.legends_tit{
+    text-align: center;
+    font-size: 3rem;
+}
+.legends_h5{
+    text-align: center;
+    font-size: 2rem;
+}
+.tarje_legends{
+    cursor: pointer;
+}
+
+/* ############### boton slider ############### */
+.Cont_Botton{
+    display: flex;
+}
+.b_left{
+    left: 100px;
+    cursor: pointer;
+}
+.b_right{
+    right: 100px;
+    cursor: pointer;
+}
+
+/* ############### requirement ############### */
+.requisito{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.requi{
+    margin-bottom: 50px;
+    width: 54%;
+}
+.req_h2{
+    font-size: 3rem;
+}
+.reqtit{
+    margin-top: 15px;
+}
+
+.req_section{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.req_01{
+    width: 33%;
+}
+.req_02{
+    margin-left: 5%;
+    width: 33%;
+}
+.req_li{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    list-style:inside;
+}
+
+
+
+/* ############### BOX Legends ############### */
+.box{
+    background-color: gray;
+    display: none;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+    border-radius: 15px;
+}
+.box_hab{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 40px;
+}
+.box_info{
+    width: 75%;
+    height: 100%;
+}
+
+.text_medio{
+    font-size: 1.75rem;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.text_ha4{
+    color: rgb(185, 19, 19);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.text_ha5{
+    font-size: 1.15rem;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.img_hab{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+.box_YT{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+}
+#Blood:checked + .box{
+    display: flex;
+}
+#fuse:checked + .box{
+    display: flex;
+}
+#gibr:checked + .box{
+    display: flex;
+}
+#hori:checked + .box{
+    display: flex;
+}
+#life:checked + .box{
+    display: flex;
+}
+#loba:checked + .box{
+    display: flex;
+}
+#mira:checked + .box{
+    display: flex;
+}
+#octa:checked + .box{
+    display: flex;
+}
+#ramp:checked + .box{
+    display: flex;
+}
+#reve:checked + .box{
+    display: flex;
+}
+#watt:checked + .box{
+    display: flex;
+}
+#wrai:checked + .box{
+    display: flex;
+}
+#valk:checked + .box{
+    display: flex;
+}
+#caus:checked + .box{
+    display: flex;
+}
+#cryp:checked + .box{
+    display: flex;
+}
+#seer:checked + .box{
+    display: flex;
+}
+#ash:checked + .box{
+    display: flex;
+}
+#banga:checked + .box{
+    display: flex;
+}
+#path:checked + .box{
+    display: flex;
+}
+
+/* ############### maps ############### */
+
+.maps_text {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 30px;
+}
+
+.maps_tit{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 30px;
+}
+.box_menu{
+    background-color: rgb(59, 59, 59);
+    width: 100%;
+}
+.menu_tit{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.maps_tit{
+    font-size: 3rem;
+}
+.menu_text{
+    color: white;
+    text-align: center;
+    font-size: 1.75rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20px;
+}
+.btn_arena{  
+    display: flex;
+    color: black;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+.btn_arena:hover{
+    background-color: white;
+    color: black;
+}
+.maps_img{
+    width: 100%;
+} 
+.list_nav{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+
+/* ############### footer ############### */
+
+footer{
+    background-color: rgb(14, 13, 13);
+    width: 100%;
+    
+}
+.footer_a{
+    color: white;
+}
+.footer_ul{
+    display: flex;
+
+}
+.footer_li{
+    font-size: 1.1rem;
+    padding: 20px 20px 20px 20px;
+}
+.footer_socials{
+    display: flex;
+    justify-content:space-between;
+    align-content: center;
+}
+.socials{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+}
+.img_footer{
+    width: 30px;
+    height: 30px;
+    margin: 5px 5px 5px 5px;
+}
+.footer_logo{
+    width: 64px;
+    height: 90px;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+.respawn{
+    width: 261px;
+    height: 54px;
+
+}
+
+
+@media (max-width: 1275px)
+{
+    .nav_li{
+        font-size: 1.5rem;
+    }
+    .box{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .box_info{
+        width: 100%;
+    }
+    .box_hab{
+        display: block;
+    }
+
+    .text_medio{
+        font-size: 1.4rem;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .text_ha4{   
+        font-size: 1.2rem;
+    }
+    .text_ha5{
+        font-size: 1rem;
+    }
+    .img_hab{
+        width: 50%;
+        display: block;
+    }
+    .box_YT{
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+    .link_YT{
+        width: 300px;
+        height: 166px;
+        margin-right: 0px;
+    }
+    #Blood:checked + .box{
+        display: block;
+    }
+    #fuse:checked + .box{
+        display: block;
+    }
+    #gibr:checked + .box{
+        display: block;
+    }
+    #hori:checked + .box{
+        display: block;
+    }
+    #life:checked + .box{
+        display: block;
+    }
+    #loba:checked + .box{
+        display: block;
+    }
+    #mira:checked + .box{
+        display: block;
+    }
+    #octa:checked + .box{
+        display: block;
+    }
+    #ramp:checked + .box{
+        display: block;
+    }
+    #reve:checked + .box{
+        display: block;
+    }
+    #watt:checked + .box{
+        display: block;
+    }
+    #wrai:checked + .box{
+        display: block;
+    }
+    #valk:checked + .box{
+        display: block;
+    }
+    #caus:checked + .box{
+        display: block;
+    }
+    #cryp:checked + .box{
+        display: block;
+    }
+    #seer:checked + .box{
+        display: block;
+    }
+    #ash:checked + .box{
+        display: block;
+    }
+    #banga:checked + .box{
+        display: block;
+    }
+    #path:checked + .box{
+        display: block;
+    }
+}
+
+@media (max-width: 840px)
+{
+    .menu_despl{
+        right: 6px;
+        top:75px
+    }
+    .header_h1{
+        font-size: 1.75rem;
+    }
+    .header_logo{
+        width: 93px;
+        height: 52px;
+        margin-top: 10px;
+    }
+    .header_account{
+        height: 56px;
+        margin-top: 7px;
+    }
+
+    /* ############### nav ############### */
+    nav{
+        display: block;
+    }
+    .nav_a{
+        color: black;
+        font-size: 1.3rem;
+        padding: 17px 24px 17px 24px;
+    }
+    .btn_hamburger{
+        display: flex;
+    }
+    .nav_ul{
+        display: none;
+        background-color: black; 
+        height: 300px;
+    }
+    #hamb:checked + .nav_ul{
+        display: block;
+        background-color: black;
+    }
+    .nav_a{
+        color: white;
+    }
+    .menu_despl{
+        background-color: rgb(88, 88, 88);
+    }
+    .img_ini{
+        display: flex;
+    }
+    /* ############### main ############### */
+
+    .btn_ITE{
+        display: flex;
+    }
+    .btn_icons{
+        display: block;
+    }
+    .acerca_h2{
+        margin-left: auto;
+    }
+    .btn_icons{
+        margin-right: auto;
+    }
+    #HIS:checked + .historia{
+        display: none;
+    }
+    #GAME:checked + .Gameplay{
+        display: none;
+    }
+    #ARM:checked + .Armas{
+        display: none;
+    }
+    #ITE:checked + .Ítems{
+        display: none;
+    }
+    #LEY:checked + .Leyendas{
+        display: none;
+    }
+
+    /* ############### BOX Legends ############### */
+    .tarje_legends{
+        width: 304px;
+        height: 510px;
+    }
+    .legends_tit{
+        font-size: 2rem;
+    }
+    .legends_h5{
+        font-size: 1.32rem;
+        padding-bottom: 10px;
+    }
+
+    /* ############### leyendas ############### */
+    .box{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .box_info{
+        width: 100%;
+    }
+    .box_hab{
+        display: block;
+    }
+
+    .text_medio{
+        font-size: 1.4rem;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .text_ha4{   
+        font-size: 1.2rem;
+    }
+    .text_ha5{
+        font-size: 1rem;
+    }
+    .img_hab{
+        width: 50%;
+        display: block;
+    }
+    .box_YT{
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+    .link_YT{
+        width: 300px;
+        height: 166px;
+        margin-right: 0px;
+    }
+    #Blood:checked + .box{
+        display: block;
+    }
+    #fuse:checked + .box{
+        display: block;
+    }
+    #gibr:checked + .box{
+        display: block;
+    }
+    #hori:checked + .box{
+        display: block;
+    }
+    #life:checked + .box{
+        display: block;
+    }
+    #loba:checked + .box{
+        display: block;
+    }
+    #mira:checked + .box{
+        display: block;
+    }
+    #octa:checked + .box{
+        display: block;
+    }
+    #ramp:checked + .box{
+        display: block;
+    }
+    #reve:checked + .box{
+        display: block;
+    }
+    #watt:checked + .box{
+        display: block;
+    }
+    #wrai:checked + .box{
+        display: block;
+    }
+    #valk:checked + .box{
+        display: block;
+    }
+    #caus:checked + .box{
+        display: block;
+    }
+    #cryp:checked + .box{
+        display: block;
+    }
+    #seer:checked + .box{
+        display: block;
+    }
+    #ash:checked + .box{
+        display: block;
+    }
+    #banga:checked + .box{
+        display: block;
+    }
+    #path:checked + .box{
+        display: block;
+    }
+
+    /* ############### maps ############### */
+    .menu_text{
+        font-size: 1.2rem;
+    }
+    .list_nav{
+        display: block;
+    }
+    .btn_arena{  
+        font-size: 1rem;
+        padding-left: 35%;
+    }
+    
+
+
+    /* ############### footer ############### */
+    .footer_ul{
+        display: flex;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .footer_li{
+        font-size: 0.9rem;
+        padding: 5px 5px 5px 5px;
+    }
+    .socials{
+        margin-left: 20px;
+    }
+    .footer_socials{
+        display: block; 
+        margin-top: 20px;
+    }
+    .icons{
+        display: block;
+    }
+    .footer_logo{
+        width: 46px;
+        height: 78px;
+        margin-left: 20px;
+        margin-right: 35px;
+    }
+    .respawn{
+        width: 174px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+    .img_footer{
+        width: 20px;
+        height: 20px;
+        margin: 5px 5px 5px 5px;
+    }
+}
+
